@@ -1,0 +1,536 @@
+<!DOCTYPE html> 
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Valorant</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="aplle-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="android-chrome-icon" sizes="512x512" href="img/android-chrome-512x512.png">
+    <link rel="android-chrome-icon" sizes="192x192" href="img/android-chrome-192x192.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e293b; /* Cor de fundo escura, similar ao tema Valorant */
+            color: #f3f4f6; /* Cor do texto clara */
+        }
+
+        header {
+            background-color: #bb1414; /* Tom escuro para o cabeçalho */
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #334155;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #64748b;
+        }
+
+        .hero {
+            background-image: url('valorant_bg.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #dc2626; /* Vermelho característico do Valorant */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b91c1c;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #0f172a;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #334155;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Valorant</h1>
+        <nav>
+            <ul> <!-- Ajustar ordem dos tópicos >Lore>Agentes>mapas>Composições>Streamers -->
+                <li><a href="#lore">Lore</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li><a href="#composition">Compositions</a></li>
+                <li><a href="#streamers">Streamers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dominate the battle with our Valorant community.</h1>
+            <p>Find agent guides, map strategies, and connect with other players passionate about Valorant in Brazil!</p>
+            <a href="#" class="btn">Junte-se à Comunidade!</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Requirements</h2>
+            <p> VALORANT is a 5v5 tactical shooter developed by Riot Games, officially released on June 2, 2020. It blends the precision of games like CS:GO with unique character abilities inspired by MOBAs like League of Legends. 
+
+                <br>Genre: Tactical FPS.
+                <br>Developer: Riot Games.
+                <br>Platform: PC.
+                <br>Main Modes: Competitive, Unranked, Deathmatch, Swiftplay, Spike Rush, Replication, Premier.</p>
+        </div>
+    </section>
+
+    <section id="lore" class="section">
+        <h2>Valorant Universe Lore</h2>
+                <br>The world of Valorant is set in the near future after a cataclysmic event known as "First Light".  This global event, of unknown origin, caused a fundamental transformation of the planet, altering landscapes and, most notably, introducing Radianite. Radianite is a mysterious and powerful substance that manifests in various forms and is the source of the supernatural abilities that some individuals, called "Radiants", began to manifest. "First Light" not only changed the world but also opened doors to a parallel dimension, or "Omega Earth", where alternative versions of our world and its inhabitants exist.  This "Omega Earth" is the origin of a constant threat, as its agents, known as "Mirrors", seek Radianite in our world (Alpha Earth) for their own purposes. To combat this interdimensional threat and protect Alpha Earth, the Valorant Protocol was created.  This secret organization recruits Agents from around the world, both Radiants and individuals with advanced technology, to form an elite team. Each Agent brings their unique skills and knowledge to the fight, working together to contain incursions from Omega Earth and understand the nature of Radianite and First Light. The lore of VALORANT is explored through cinematics, character dialogues, map details, and agent contracts, gradually revealing the mysteries of this universe.</p>
+        </div>
+    </section>
+
+    <section id="composition" class="section"> <!-- Conteúdo não traz a composição ideal!! -->
+        <h2>Ideal Composition</h2>
+        <p>Fique por dentro de todas as novidades do mundo de Valorant. Anúncios de novos agentes e mapas, eventos da comunidade e muito mais!</p>
+        <div class="grid-container">
+            <div class="card">
+                <img src="noticia1.jpg" alt="Notícia 1">
+                <h3>Atualização do Mapa "Ascent"</h3>
+                <p>O mapa Ascent recebe alterações significativas para equilibrar o jogo entre atacantes e defensores.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+            <div class="card">
+                <img src="noticia2.jpg" alt="Notícia 2">
+                <h3>Evento da Comunidade: Desafio de Fanart</h3>
+                <p>Mostre sua criatividade! Participe do nosso desafio de fanart com prêmios incríveis para os vencedores.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="agents" class="section">
+        <h2>Conheça os Agentes</h2>
+        <p>Explore a fundo as habilidades e lore de cada um dos agentes de Valorant. Encontre seu estilo de jogo e domine suas mecânicas!</p>
+        <div class="grid-container">
+            <div class="card">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/94d795777116652279c4de73ba19976639c12f5d-1920x1080.jpg" alt="Jett">
+                <h3>Jett</h3>
+                <p>Ágil e evasiva, capaz de realizar jogadas de alto risco com sua mobilidade. <br>Habilidades:
+                        <br>Corrente Ascendente (Q): Impulso vertical.
+                        <br>Brisa de Impulso (E): Pequeno dash horizontal.
+                        <br>Erguer (C): Cria nuvens de fumaça temporárias.
+                        <br>Tormenta de Aço (X): Lança facas mortais com alta precisão.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Jett</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.gamearena.gg/wp-content/uploads/2024/09/12165000/phoenix-valorant.jpg" alt="Phoenix">
+                <h3>Phoenix (Reino Unido)</h3>
+                <p>Piromaníaco com habilidades de fogo ofensivas e de cura. <br>Habilidades:
+                    <br>Labareda (Q): Lança uma bola de fogo em arco.
+                    <br>Mãos Quentes (E): Lança uma bola de fogo que explode após um tempo.
+                    <br>Curva Bola (C): Lança uma orbe de luz que curva e cega.
+                    <br>Renascer (X): Revive com vida e escudo completos após morrer durante a habilidade.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Phoenix</a>
+            </div>
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/2-uAL__pp_U/maxresdefault.jpg" alt="Raze">
+                <h3>Raze (Brasil)</h3>
+                <p>Explosiva e caótica, usa granadas e robôs para abrir caminho. <br>Habilidades:
+                    <br>Cartucho de Tinta (Q): Granada que explode após um curto período ou ao ser reaplicada.
+                    <br>Bumba (E): Robô terrestre que persegue inimigos e explode.
+                    <br>Carga de Explosão (C): Pacotes explosivos que impulsionam Raze e causam dano.
+                    <br>Estraga-Prazeres (X): Lança um lança-foguetes com dano massivo em área.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Raze</a>
+            </div>
+            <div class="card">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a9bd360ee11bb1b8104b8bf4099c205ce5ddddde-1920x1080.jpg?auto=format&fit=fill&q=80&w=1082" alt="Yoru">
+                <h3>Yoru (Japão)</h3>
+                <p>Mestre do engano, usa portais e hologramas para confundir inimigos. <br>Habilidades:
+                    <br>Pulo Dimensional (Q): Lança um orbe que se teleporta ao ser ativado.
+                    <br>Passagem Enganosa (E): Cria um clone que avança e explode ou pode ser enviado para teletransportar Yoru.
+                    <br>Vislumbre (C): Lança um orbe que cega após um tempo.
+                    <br>Viagem Dimensional (X): Fica invisível e invulnerável por um curto período.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Yoru</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.gamearena.gg/wp-content/uploads/2025/03/25111237/reyna.jpg" alt="Reyna">
+                <h3>Reyna (México)</h3>
+                <p>Vampírica e agressiva, cura-se e torna-se invulnerável com abates. <br>Habilidades:
+                    <br>Olhar Voraz (Q): Lança um olho que cega inimigos próximos.
+                    <br>Descartar (E): Consome uma alma para curar-se rapidamente.
+                    <br>Devorar (E - após abate): Consome uma alma para tornar-se intangível e invisível por um curto período.
+                    <br>Ultimato - Imperatriz (X): Entra em frenesi, aumentando velocidade de disparo, recarga e habilidades. Abates renovam a duração.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Reyna</a>
+            </div>
+            <div class="card">
+                <img src="https://www.exitlag.com/blog/wp-content/uploads/2024/08/Neon-Valorant-Agent-Complete-Guide-To-Abilities-And-Strategies-1.webp"                alt="Neon">
+                <h3>Neon (Filipinas)</h3>
+                <p> Veloz e elétrica, capaz de correr rapidamente e disparar raios. <br>Habilidades:
+                    <br>Relâmpago Ricochete (Q): Lança dois raios que ricocheteiam e atordoam.
+                    <br>Via Acelerada (E): Cria duas paredes de energia estática que bloqueiam a visão e causam dano a inimigos que as atravessam.
+                    <br>Equipamento - Marcha Veloz (C): Corre em alta velocidade por um curto período.
+                    <br>Ultimato - Sobrecarga (X): Libera todo o poder de Neon, disparando um raio contínuo com alta precisão e mobilidade aprimorada.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Neon</a>
+            </div>
+            <div class="card">
+                <img src="https://static.valorantzone.gg/news/2023/10/19124126/iso.jpg" alt="iso">
+                <h3>Iso (China)</h3>
+                <p>Mercenário contratado que manipula energia para se proteger e atacar. <br>Habilidades:
+                    <br>Contingência (Q): Cria um muro de energia que avança e bloqueia projéteis.
+                    <br>Indefinível (E): Entra em estado de foco, ao abater um inimigo gera um escudo de energia.
+                    <br>Duplo Golpe (C): Lança um projétil que atravessa paredes e aplica vulnerabilidade.
+                    <br>Queda Fatal (X): Lança uma onda de energia que prende o primeiro inimigo atingido e Iso em uma arena para um duelo mortal.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Iso</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.gamearena.gg/wp-content/uploads/2025/03/01202718/Waylay_Wallpaper-1024x576.jpg" alt="Waylay">
+                <h3>Waylay (Tailândia)</h3>
+                <p>A radiante prismática da Tailândia, Waylay transforma-se em luz enquanto se move pelo campo de batalha, atingindo os seus alvos através de fragmentos de luz antes de voltar em segurança, num piscar de olhos. <br>Habilidades:
+                    <br>Saturate (Q): Lança um aglomerado de luz que explode ao contacto com o chão, dificultando os jogadores próximos com uma poderosa redução de movimento e manuseio de arma.
+                    <br>Lightspeed (E): Esta habilidade permite a Waylay avançar duas vezes, o primeiro avanço impulsionando-a para cima. O segundo avanço pode ser ativado por um disparo alternativo.
+                    <br>Refract (C): Waylay cria um farol de luz no chão. Quando ela reativa a habilidade, ela viaja de volta para a localização desse farol como uma pura partícula de luz, invulnerável a todo o dano e habilidades.
+                    <br>Convergent Paths (X): Waylay concentra o seu poder prismático para criar uma pós-imagem de si mesma que projeta um feixe de luz. Após um breve atraso, ela ganha um poderoso aumento de velocidade, enquanto os inimigos que permanecem no feixe são dificultados por algumas desvantagens.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Waylay</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/a61P0vx5UbRG_uL5xVQy0X3vf8s=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/a/j/f1y0PdT4AeoeIfZiViMg/sage-valorant.jpg" alt="Sage">
+                <h3>Sage (China)</h3>
+                <p>Monja de combate com poder de curar aliados e controlar áreas com precisão. <br>Habilidades:
+                    <br>Orbe de Lentidão (Q): Cria um campo que desacelera e silencia passos.
+                    <br>Orbe de Cura (E): Cura a si mesma ou um aliado.
+                    <br>Orbe de Barreira (C): Constrói uma parede sólida.
+                    <br>Ressurreição (X): Revive um aliado abatido.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Sage</a>
+            </div>
+            <div class="card">
+                <img src="https://static.valorantzone.gg/news/2020/04/30110805/cypher-valorant.png" alt="Cypher">
+                <h3>Cypher (Marrocos)</h3>
+                <p>Mestre da vigilância e coleta de informações. <br>Habilidades:
+                    <br>Fio-armadilha (C): Dispositivo que marca e retarda inimigos.
+                    <br>Câmera de Vigilância (E): Coloca uma câmera controlável.
+                    <br>Jaula Cibernética (Q): Lança um campo que obscurece a visão e silencia passos.
+                    <br>Assalto Neural (X): Revela localização de inimigos vivos ao usar em cadáver inimigo.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Cypher</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.gamearena.gg/wp-content/uploads/2023/03/30005329/VALORANT-Killjoy-800x450-1.jpg" alt="Killjoy">
+                <h3>Killjoy (Alemanha)</h3>
+                <p>Gênio da tecnologia que usa torres e robôs para controlar o campo de batalha. <br>Habilidades:
+                    <br>Nanoenxame (C): Granada invisível que causa dano por segundo.
+                    <br>Torre (E): Dispara em inimigos na linha de visão.
+                    <br>Alarme-bot (Q): Robô que corre até inimigos e explode, aplicando vulnerabilidade.
+                    <br>Confinamento (X): Dispositivo que prende inimigos em grande área após tempo de carga.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Killjoy</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-techtudo.glbimg.com/K1IBrRuDZ0tEDqMJOQzSDWARJ_s=/0x0:3840x2160/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/p/0/sEMSCvSoy5SdcIJGKY9w/chamber-wallpaper-1.png" alt="Chamber">
+                <h3>Chamber (França)</h3>
+                <p>Estiloso e letal, usa armamentos personalizados e teletransporte tático. <br>Habilidades:
+                    <br>Marca Registrada (C): Armadilha que desacelera inimigos.
+                    <br>Rendezvous (E): Teletransporte entre dois pontos marcados.
+                    <br>Caçador de Cabeças (Q): Pistola de precisão com modo alternativo.
+                    <br>Tour de Force (X): Rifle de precisão poderoso que desacelera inimigos abatidos.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Chamber</a>
+            </div>
+            <div class="card">
+                <img src="https://assets.gamearena.gg/wp-content/uploads/2023/06/29232328/dreadlock-valorant-novo-agente.jpg" alt="Deadlock">
+                <h3>Deadlock (Noruega)</h3>
+                <p>Ex-soldada especialista em contenção, usa tecnologia magnética para impedir avanços. <br>Habilidades:
+                    <br>Granada Sônica (C): Granada que emite ondas sonoras e interrompe movimentação.
+                    <br>Rede de Contenção (Q): Lança uma rede que desacelera e limita movimentação.
+                    <br>Barreira de Fios (E): Cria uma barreira que bloqueia passagem.
+                    <br>Aniquilação (X): Captura um inimigo e o arrasta até sua morte se não for interrompido.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Deadlock</a>
+            </div>
+            <div class="card">
+                <img src="https://static.valorantzone.gg/news/2024/08/22174131/vyse.jpg" alt="Vyse">
+                <h3>Vyse (Desconhecido)</h3>
+                <p>A mestre dos metais Vyse usa metal líquido para isolar, prender e desarmar os inimigos. Com astúcia e manipulação, ela faz todos os adversários que a enfrentam temerem o próprio campo de batalha. <br>Habilidades:
+                    <br>Arc Rose (Q): Equipa uma Rosa Arcana. Mire em uma superfície e DISPARE para posicionar uma Rosa Arcana oculta, ou use o DISPARO ALTERNATIVO para posicionar a Rosa Arcana através da superfície. USE NOVAMENTE para cegar todos os jogadores que estiverem olhando para ela. A habilidade pode ser recuperada e REPOSICIONADA.
+                    <br>Razerine (C): Equipa um ninho de metal líquido. DISPARE para lançá-lo no chão. Ao pousar, este ninho torna-se invisível. Ative-o para que se espalhe num ninho maior de lâminas que retarda e causa dano a todos os jogadores que o atravessam.
+                    <br>Shear (E): Equipa filamentos de metal líquido. DISPARE para posicionar uma armadilha de parede oculta. Quando um inimigo passa por ela, uma parede indestrutível emerge do chão atrás dele. A parede dura um breve período antes de se dissipar.
+                    <br>Steel Garden (X): Equipa os espinhos de metal líquido. DISPARE para lançar os espinhos numa área ampla. Os inimigos apanhados nesta Habilidade Suprema perdem a capacidade de usar a sua arma principal, pois esta fica encravada e envolvida em vinhas metálicas.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Vyse</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/kH-bmBCIRfjlpX0CF5PV99-rQeE=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/O/m/XnFVmGQz2xDBIOS3dKPg/brimstone-1.jpg" alt="Brimstone">
+                <h3>Brimstone (EUA)</h3>
+                <p>Líder estratégico que comanda ataques coordenados com precisão orbital. <br>Habilidades:
+                    <br>Sinalizador Estimulante (C): Área que aumenta velocidade de disparo.
+                    <br>Fumaça Celeste (E): Lança fumaças em locais selecionados no mapa.
+                    <br>Incendiário (Q): Granada incendiária de área.
+                    <br>Ataque Orbital (X): Ataque de laser contínuo em área.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Brimstone</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/PXFH6KZAtAPXiPbj7tHtRoK8TJY=/0x0:1501x844/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/2/A/Pe7UUxTIGnHw5gxYwigA/omen.jpg" alt="Omen">
+                <h3>Omen (Desconhecida)</h3>
+                <p>Entidade sombria que manipula sombras para emboscar inimigos. <br>Habilidades:
+                    <br>Passos Tenebrosos (C): Teleporta-se a curta distância.
+                    <br>Manto Sombrio (E): Lança orbes de fumaça.
+                    <br>Paranoia (Q): Projeta sombra que cega todos na linha.
+                    <br>Salto das Sombras (X): Teleporta-se para qualquer lugar do mapa.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Omen</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/ZOEUkvRxyaoa2LYztUO-S76cfHU=/0x0:800x450/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/5/r/BZ5IaGTYSUgVUBo9vkTA/viper-valorant.jpg" alt="Viper">
+                <h3>Viper (EUA)</h3>
+                <p>Cientista química que usa venenos para controlar território. <br>Habilidades:
+                    <br>Nuvem Venenosa (Q): Granada de fumaça com veneno.
+                    <br>Cortina Tóxica (E): Parede longa de veneno.
+                    <br>Mordida da Serpente (C): Lança ácido no chão.
+                    <br>Poço Peçonhento (X): Grande área de veneno que reduz visão e vida.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Viper</a>
+            </div>
+            <div class="card">
+                <img src="https://arena.rtp.pt/wp-content/uploads/2021/02/Astra_Wallpapers_light1.jpg" alt="Astra">
+                <h3>Astra (Gana)</h3>
+                <p> Manipula o cosmos para planejar ataques e defesas com precisão estelar. <br>Habilidades:
+                    <br>Forma Astral (X): Entra em visão astral para posicionar estrelas.
+                    <br>Pulso Nova (Q): Concussiona inimigos.
+                    <br>Poço Gravitacional (C): Puxa inimigos para o centro.
+                    <br>Nebulosa/Dissipar (E): Cria fumaça ou recupera estrela.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Astra</a>
+            </div>
+            <div class="card">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2591a7110e2d4ed20a5f905b9c85c6c74f9ee0bb-1920x1080.jpg" alt="Harbor">
+                <h3>Harbor (Índia)</h3>
+                <p>Controlador de água que usa artefato ancestral para moldar campos de batalha. <br>Habilidades:
+                    <br>Maré Alta (E): Muralha de água controlável.
+                    <br>Enseada (C): Escudo de água esférico.
+                    <br>Maré Crescente (Q): Água que desacelera inimigos.
+                    <br>Reckoning (X): Marca inimigos com jato de água.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Harbor</a>
+            </div>
+            <div class="card">
+                <img src="https://noticias.maisesports.com.br/wp-content/uploads/2024/03/clove-valorant-new-agent.jpg" alt="Clove">
+                <h3>Clove (Escócia)</h3>
+                <p>Uma agente escocesa que desafia a morte, usando sua imortalidade para confundir e desorientar inimigos. <br>Habilidades:
+                    <br>Meddle (Q): Lança um fragmento de essência imortal que explode após um curto atraso, temporariamente deteriorando todos os inimigos atingidos.
+                    <br>Smoke (E): Projeta um orbe de fumaça que bloqueia a visão. Clove pode usar esta habilidade mesmo após ser abatida.
+                    <br>Pick-Me-Up (C): Absorve a força vital de um inimigo abatido, concedendo velocidade e cura temporárias.
+                    <br>Not Dead Yet (X): Após ser abatida, Clove pode se reanimar por um curto período de tempo. Se conseguir um abate ou assistência durante esse tempo, ela permanece viva.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Clove</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-techtudo.glbimg.com/qlC64g73Q2l7ZDD-sjIZ3Ai5vGw=/0x0:3840x2160/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/X/U/eLCvA7Q26ist3lFctXuw/valorant-sova-dark.jpg" alt="Sova">
+                <h3>Sova (Rússia)</h3>
+                <p>Arqueiro habilidoso que rastreia e revela inimigos com seu arco tecnológico. <br>Habilidades:
+                    <br>Flecha de Choque (Q): Flecha explosiva que causa dano.
+                    <br>Drone Coruja (E): Drone voador controlável para reconhecimento.
+                    <br>Flecha Rastreadora (C): Flecha que revela a localização de inimigos.
+                    <br>Fúria do Caçador (X): Três disparos de energia que atravessam paredes e revelam inimigos.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Sova</a>
+            </div>
+            <div class="card">
+                <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2020/10/30/odxgos7ooyc39zura8wn/valorant-operator-breach" alt="Sage">
+                <h3>Breach (Suécia)</h3>
+                <p>Demolidor com implantes biônicos que causam dano e desorientação. <br>Habilidades:
+                    <br>Estouro Faltal (Q): Disparo de concussão que atravessa paredes.
+                    <br>Pós-choque (E): Carga explosiva que atravessa paredes.
+                    <br>Linha de Falha (C): Tremor sísmico que concussiona em linha reta.
+                    <br>Onda Trovejante (X): Grande onda sísmica que desarma e concussiona inimigos.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Breach </a>
+            </div>
+            <div class="card">
+                <img src="https://theclutch.com.br/wp-content/uploads/2023/03/skye-valorant.jpg" alt="Skye">
+                <h3>Skye (Austrália)</h3>
+                <p>Domadora de feras que usa criaturas para curar aliados e cegar inimigos. <br>Habilidades:
+                    <br>Luz Desorientadora (Q): Falcão que cega ao explodir.
+                    <br>Regeneração (E): Cura aliados em área de efeito.
+                    <br>Predador Selvagem (C): Lança um tigre que persegue e atordoa o primeiro inimigo.
+                    <br>Guia da Luz (X): Três falcões que rastreiam os inimigos mais próximos.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Skye</a>
+            </div>
+            <div class="card">
+                <img src="https://media.assettype.com/afkgaming/2021-06/39b66725-b7fe-4426-8304-3f812690591c/1.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max" alt="KAY/O">
+                <h3>KAY/O (origem robótica)</h3>
+                <p>Robô de guerra com habilidades para suprimir e neutralizar as habilidades inimigas. <br>Habilidades:
+                    <br>FRAGMENTO/E (Q): Granada explosiva que gruda no chão e explode múltiplas vezes.
+                    <br>PONTO/ZERO (E): Lança uma lâmina que suprime habilidades na área de impacto.
+                    <br>FLASH/DRIVE (C): Granada de luz que cega.
+                    <br>NULL/CMD (X): Pulso de energia que suprime habilidades inimigas em uma grande área e permite reviver aliados caídos.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre KAY/O</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/pItFoIwegODXHdWEZMaH1da_gA4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/g/i/z4x3ndQ6ODDGmLlWdTyQ/fade-valorant.jpg" alt="Fade">
+                <h3>Fade (Turquia)</h3>
+                <p>Caçadora de recompensas que usa pesadelos para rastrear e aprisionar inimigos. <br>Habilidades:
+                    <br>Assombrar (Q): Lança uma entidade que revela a localização de inimigos em seu campo de visão.
+                    <br>Aproximação (E): Lança uma orbe que se transforma em uma criatura que prende inimigos próximos.
+                    <br>Capturar (C): Arremessa uma orbe que explode e ensurdece e deteriora os inimigos em uma área.
+                    <br>Véu da Noite (X): Lança uma onda de energia sombria que ensurdece e marca os inimigos em seu rastro.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Fade</a>
+            </div>
+            <div class="card">
+                <img src="https://s2-ge.glbimg.com/udIUI_tOGMha7FdibuG22aTjdXg=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/O/S/d1wSsGQNSZBi1WzUjAew/gekko-valorant.jpg" alt="Gekko">
+                <h3>Gekko (EUA)</h3>
+                <p>Líder de equipe com criaturas elementais que desarmam, cegam e atacam inimigos. <br>Habilidades:
+                    <br>Asa Tumultuosa (Q): Envia uma criatura voadora que busca inimigos e os concussiona ao atingir. Pode ser recuperada uma vez.
+                    <br>Disparo Plasma (E): Envia uma criatura que lança rajadas de plasma. Ao expirar, transforma-se em uma gosma que nega área. Pode ser recuperada uma vez.
+                    <br>Mosh Pit (C): Lança uma criatura que cria uma área de dano explosivo ao atingir o chão.
+                    <br>Surto Agitado (X): Envia uma criatura que prende o primeiro inimigo que encontrar. Pode ser recuperada após a captura ou expiração.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Gekko</a>
+            </div>
+            <div class="card">
+                <img src="https://multiversomais.com/wp-content/uploads/2025/01/381439769.jpg" alt="Tejo">
+                <h3>Tejo (Colômbia)</h3>
+                <p>Um veterano consultor de inteligência da Colômbia, o sistema de orientação balística de Tejo pressiona o inimigo a ceder terreno - ou as suas vidas. Os seus ataques direcionados mantêm os oponentes desequilibrados e sob o seu controle. <br>Habilidades:
+                    <br>Salvo Guiado (Q): Equipa um sistema de mira AR. DISPARE para selecionar até dois locais alvo no mapa. DISPARO ALTERNATIVO para lançar mísseis que navegam autonomamente para os locais alvo, detonando ao chegar.
+                    <br>Drone Furtivo (E): Equipa um drone furtivo. DISPARE para lançar o drone para a frente e assumir o controlo direto do seu movimento. DISPARE novamente para ativar um pulso que suprime e revela os inimigos atingidos.
+                    <br>Entrega Especial (C): Equipa uma granada pegajosa e pressione DISPARAR para lançá-la. A granada adere à primeira superfície que atinge e explode, concussando quaisquer alvos apanhados na explosão. Pode usar o DISPARO ALTERNATIVO para lançar a granada com um único ricochete.
+                    <br>Armageddon (X): Equipa um mapa de mira de ataque tático. DISPARE para selecionar o ponto de origem do ataque. DISPARE novamente para definir o ponto final e lançar o ataque, desencadeando uma onda de explosões ao longo do caminho do ataque.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Saiba mais sobre Tejo</a>
+            </div>
+            </div>
+    </section>
+     <section class="section">
+    <section id="composition">
+        <h2>Ideal Composition</h2>
+        <p>Fique por dentro de todas as novidades do mundo de Valorant. Anúncios de novos agentes e mapas, eventos da comunidade e muito mais!</p>
+        <img src="https://pt.egamersworld.com/uploads/blog/1672150650677.webp">
+        <div class="grid-container">
+            <div class="card">
+                <img src="noticia1.jpg" alt="Notícia 1">
+                <h3>Atualização do Mapa "Ascent"</h3>
+                <p>O mapa Ascent recebe alterações significativas para equilibrar o jogo entre atacantes e defensores.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+            <div class="card">
+                <img src="noticia2.jpg" alt="Notícia 2">
+                <h3>Evento da Comunidade: Desafio de Fanart</h3>
+                <p>Mostre sua criatividade! Participe do nosso desafio de fanart com prêmios incríveis para os vencedores.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+        </div>
+    </section>
+
+         <section class="section">
+    <section id="maps">
+        <h2>Maps</h2>
+        <p>Learn about the each map!</p>
+            <div class="card">
+                <h3>Atualização do Mapa "Ascent"</h3>
+                <p>O mapa Ascent recebe alterações significativas para equilibrar o jogo entre atacantes e defensores.</p>
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/699c33a4ee5f5daf71e87c0f3bf6ddf6995b4bb3-2000x2000.jpg?auto=format&fit=fill&q=80&w=1781" alt="Sunset">        <div class="grid-container">
+
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+            <div class="card">
+                <h3>Evento da Comunidade: Desafio de Fanart</h3>
+                <p>Mostre sua criatividade! Participe do nosso desafio de fanart com prêmios incríveis para os vencedores.</p>
+                <a href="#" style="color: #dc2626; text-decoration: none;">Leia mais...</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Comunidade Valorant Brasil. Todos os direitos reservados.</p>
+    </footer>
+
+    </body>
+</html>
